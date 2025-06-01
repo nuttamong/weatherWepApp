@@ -1,0 +1,16 @@
+.map-container {
+    padding: 60px;
+
+}
+
+select {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}

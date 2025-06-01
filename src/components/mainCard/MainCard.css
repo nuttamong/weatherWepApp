@@ -1,0 +1,51 @@
+.card-maincard {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    background: white;
+    gap: 1.5rem;
+}
+
+.card-maincard .card-header {
+    color: steelblue;
+}
+
+.card-maincard .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.card-maincard .temperature {
+    font-size: 1.5rem;
+    color:cadetblue;
+}
+
+.card-maincard .details {
+
+}
+
+.good {
+    color: green;
+}
+
+.fair {
+    color: greenyellow;
+}
+
+.moderate {
+    color: yellow
+}
+
+.poor {
+    color: orange;
+}
+
+.very-poor {
+    color: red;
+}

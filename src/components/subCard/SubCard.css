@@ -1,0 +1,38 @@
+.card-subcard {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    background: white;
+    gap: 1.5rem;
+}
+
+.card-subcard .card-header {
+    color: steelblue;
+}
+
+.card-subcard .card-body {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.card-subcard .forecast-item {
+    margin: 5px 10px;
+    padding: 0 10px;
+    width: 10vw;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ccc;
+    font-size: 1.2rem;
+}
+
+.card-subcard .forecast-item:last-child {
+    border-right: none;
+}

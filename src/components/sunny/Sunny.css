@@ -1,0 +1,118 @@
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #87cfebd5; /* สีฟ้าท้องฟ้า */
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.sun {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #FFD700, #FFA500, transparent 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 60px 30px rgba(255, 215, 0, 0.5);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 60px 30px rgba(255, 215, 0, 0.5); }
+  50% { box-shadow: 0 0 80px 40px rgba(255, 215, 0, 0.7); }
+  100% { box-shadow: 0 0 60px 30px rgba(255, 215, 0, 0.5); }
+}
+
+/* ☁️ Clouds */
+.cloud {
+  position: absolute;
+  top: 100px;
+  width: 120px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: moveCloud 60s linear infinite;
+}
+
+.cloud::before,
+.cloud::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.cloud::before {
+  width: 80px;
+  height: 80px;
+  top: -20px;
+  left: 20px;
+}
+
+.cloud::after {
+  width: 100px;
+  height: 100px;
+  top: -40px;
+  left: 60px;
+}
+
+.cloud1 {
+  top: 80px;
+  left: -200px;
+  animation-delay: 0s;
+}
+
+.cloud2 {
+  top: 150px;
+  left: -400px;
+  animation-delay: 20s;
+}
+
+@keyframes moveCloud {
+  0% { left: -200px; }
+  100% { left: 110vw; }
+}
+
+/* ⛰️ Mountains */
+.mountains {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to top, #556b2f, #6b8e23);
+  clip-path: polygon(0% 100%, 20% 60%, 35% 80%, 50% 50%, 70% 75%, 85% 60%, 100% 100%);
+}
+
+/* 🌳 Trees */
+.tree {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 60px;
+  background: sienna;
+}
+
+.tree::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: -15px;
+  width: 50px;
+  height: 50px;
+  background: green;
+  border-radius: 50%;
+}
+
+.tree1 {
+  left: 20%;
+}
+
+.tree2 {
+  left: 70%;
+}
