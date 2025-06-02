@@ -14,3 +14,14 @@ select:focus {
     outline: none;
     border-color: #007bff;
 }
+
+@media screen and (max-width: 800px) {
+    .map-container {
+        padding: 25px;
+        text-align: center;
+    }
+
+    select {
+        width: 50%;
+    }
+}

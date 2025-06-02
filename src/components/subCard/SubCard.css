@@ -37,3 +37,30 @@
 .card-subcard .forecast-item:last-child {
     border-right: none;
 }
+
+@media screen and (max-width: 1455px) {
+    .card-subcard {
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card-subcard {
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        width: 250px;
+    }
+
+    .card-subcard .card-body {
+        flex-direction: column;
+    }
+
+    .card-subcard .forecast-item {
+        flex-direction: column;
+        border-right: 0;
+    }
+    
+}
+

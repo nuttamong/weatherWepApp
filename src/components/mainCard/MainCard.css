@@ -26,6 +26,18 @@
     color:cadetblue;
 }
 
+@media screen and (max-width: 1455px) {
+    .card-maincard {
+        border-bottom-left-radius: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card-maincard {
+        border-bottom-left-radius: 0;
+    }
+}
+
 .good {
     color: green;
 }
